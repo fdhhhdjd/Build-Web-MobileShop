@@ -38,8 +38,7 @@
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css" />
    <?php 
-  //  require("Database/DBController.php")
-   require("functions.php")
+   require("database/DBController.php")
    ?>
   </head>
   <body>

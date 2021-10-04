@@ -37,10 +37,6 @@
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css" />
-   <?php 
-  //  require("Database/DBController.php")
-   require("functions.php")
-   ?>
   </head>
   <body>
     <!-- start #header -->

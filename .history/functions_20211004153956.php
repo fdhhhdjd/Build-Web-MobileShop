@@ -15,7 +15,7 @@ $db = new DBController();
 
 // Product object
 $product = new Product($db);
-$product_shuffle = $product->getData();
+// $product_shuffle = $product->getData();
 
 // Cart object
 // $Cart = new Cart($db );

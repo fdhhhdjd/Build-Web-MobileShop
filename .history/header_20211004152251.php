@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="style.css" />
    <?php 
   //  require("Database/DBController.php")
-   require("functions.php")
+   require("function.php")
    ?>
   </head>
   <body>

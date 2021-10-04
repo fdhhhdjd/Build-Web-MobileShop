@@ -21,7 +21,7 @@ $product_shuffle = $product->getData();
                             <span><i class="far fa-star"></i></span>
                         </div>
                         <div class="price py-2">
-                        <span>$<?php echo $item['item_price'] ?? '0' ; ?></span>
+                            <span>$152</span>
                         </div>
                      <button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>
                         </form>
