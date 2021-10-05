@@ -32,9 +32,10 @@ $product_shuffle = $product->getData();
                       <button type="submit" class="btn btn-warning font-size-12">Add to Cart</button>
                     </div>
                   </div>
+                  <?php},$product_shuffle)?>
                 </div>
                 </div>
-                <?php },$product_shuffle) // closing foreach function ?>
+        
               </div>
             </div>
           </section>

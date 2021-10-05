@@ -34,7 +34,7 @@ $product_shuffle = $product->getData();
                   </div>
                 </div>
                 </div>
-                <?php },$product_shuffle) // closing foreach function ?>
+               <?php},$product_shuffle)?>
               </div>
             </div>
           </section>

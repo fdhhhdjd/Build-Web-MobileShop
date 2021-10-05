@@ -12,7 +12,7 @@ $product_shuffle = $product->getData();
               </div>
 
               <div class="grid">
-                  <?php array_map (function ($item){?>
+              <?php array_map(function($item){?>
                 <div class="grid-item border <?php echo $item['item_brand']??"Brand";?>">
                  <div class="item py-2" style="width: 200px;">
                   <div class="product font-rale">
@@ -34,7 +34,7 @@ $product_shuffle = $product->getData();
                   </div>
                 </div>
                 </div>
-                <?php },$product_shuffle) // closing foreach function ?>
+               <?php},$product_shuffle?>
               </div>
             </div>
           </section>
