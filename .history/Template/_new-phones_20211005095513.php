@@ -1,7 +1,6 @@
 <!-- New Phones -->
 <?php
 $product_shuffle = $product->getData();
-
 ?>
 <section id="new-phones">
     <div class="container">

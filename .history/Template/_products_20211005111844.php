@@ -19,7 +19,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 py-5">
-                        <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
+                            <h5 class="font-baloo font-size-20">Samsung Galaxy 10</h5>
                             <small>by <?php echo $item['item_brand'] ?? "Brand"; ?></small>
                             <div class="d-flex">
                                 <div class="rating text-warning font-size-12">

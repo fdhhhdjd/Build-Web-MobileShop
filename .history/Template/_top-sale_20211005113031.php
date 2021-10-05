@@ -1,7 +1,5 @@
-<!-- New Phones -->
-<?php
+<?php 
 $product_shuffle = $product->getData();
-
 ?>
 <section id="new-phones">
     <div class="container">
@@ -34,4 +32,4 @@ $product_shuffle = $product->getData();
 
     </div>
 </section>
-<!-- !New Phones -->
+<!-- !Top Sale -->

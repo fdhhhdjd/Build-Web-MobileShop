@@ -6,7 +6,7 @@ $product_shuffle = $product->getData();
         <h4 class="font-rubik font-size-20">Top Sale</h4>
         <hr>
         <!-- owl carousel -->
-        <div class="owl-carousel owl-theme">
+   
             <?php foreach ($product_shuffle as $item) { ?>
             <div class="item py-2">
                 <div class="product font-rale">
@@ -24,7 +24,7 @@ $product_shuffle = $product->getData();
                         <span>$<?php echo $item['item_price'] ?? '0' ; ?></span>
                         </div>
                      <button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        
+                        </form>
                     </div>
                 </div>
             </div>

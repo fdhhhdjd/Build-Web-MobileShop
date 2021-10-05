@@ -24,7 +24,7 @@ $product_shuffle = $product->getData();
                         <span>$<?php echo $item['item_price'] ?? '0' ; ?></span>
                         </div>
                      <button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>
-                        
+                        </form>
                     </div>
                 </div>
             </div>
