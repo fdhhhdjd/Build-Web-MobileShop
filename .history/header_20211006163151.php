@@ -58,9 +58,9 @@
 
       <!-- Primary Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
-
-      <a class="navbar-brand" href="index.php">Mobile Shope</a>
-  
+      <a href="index.php" class="py-2 rounded-pill color-primary-bg">
+      <a class="navbar-brand" href="#">Mobile Shope</a>
+      </a>
     
         <button
           class="navbar-toggler"
