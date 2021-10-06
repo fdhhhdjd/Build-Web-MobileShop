@@ -23,6 +23,6 @@ $Cart = new Cart($db );
 //     "user_id"=>3,
 //     "item_id"=>5
 // );
-// print_r($Cart->getCartId($product->getData("cart")));
+print_r($Cart->getCartId($product->getData("cart")));
 
 // $Cart->insertIntoCart($arr);

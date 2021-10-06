@@ -3,14 +3,7 @@
  $unique = array_unique($brand);
  sort($unique);
  shuffle($product_shuffle);
- if($_SERVER['REQUEST_METHOD'] == "POST"){
-  if (isset($_POST['special_price_submit'])){
-      // call method addToCart
-      $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
-  }
-}
 
-$in_cart = $Cart->getCartId($product->getData('cart'));
 ?>
 <section id="special-price">
             <div class="container">
@@ -26,7 +19,7 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
               </div>
 
               <div class="grid">
-                  <?php array_map (function ($item  ){?>
+                  <?php array_map (function ($item){?>
                 <div class="grid-item border <?php echo $item['item_brand']??"Brand";?>">
                  <div class="item py-2" style="width: 200px;">
                   <div class="product font-rale">
@@ -46,12 +39,12 @@ $in_cart = $Cart->getCartId($product->getData('cart'));
                       <?php
                             //!Hàm in_array() trong php dùng để kiểm tra giá trị nào đó có tồn tại trong mảng hay không.
                             //! Nếu như tồn tại thì nó sẽ trả về TRUE và ngược lại sẽ trả về FALSE 
-                            if (in_array($item['item_id'], $in_cart ?? [])){
-                              echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
-                          }else{
-                              echo '<button type="submit" name="special_price_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
-                          }
-                        ?>
+                            if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
+                            }else{
+                                echo '<button type="submit" name="top_sale_submit" class="btn btn-warning font-size-12">Add to Cart</button>';
+                            }
+                            ?>
                     </div>
                   </div>
                 </div>

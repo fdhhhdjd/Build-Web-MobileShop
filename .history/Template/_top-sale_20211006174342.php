@@ -36,8 +36,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
                             <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? '1'; ?>">
                             <input type="hidden" name="user_id" value="<?php echo 1; ?>">
                             <?php
-                            //!Hàm in_array() trong php dùng để kiểm tra giá trị nào đó có tồn tại trong mảng hay không.
-                            //! Nếu như tồn tại thì nó sẽ trả về TRUE và ngược lại sẽ trả về FALSE 
                             if (in_array($item['item_id'], $Cart->getCartId($product->getData('cart')) ?? [])){
                                 echo '<button type="submit" disabled class="btn btn-success font-size-12">In the Cart</button>';
                             }else{
