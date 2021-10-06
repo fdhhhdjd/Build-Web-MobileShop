@@ -19,9 +19,9 @@ $product_shuffle = $product->getData();
 
 // Cart object
 $Cart = new Cart($db );
-// $arr=array(
-//     "user_id"=>3,
-//     "item_id"=>5
-// );
+$arr=array(
+    "user_id"=>"tientai",
+    "item_id"=>9
+);
 
-// $Cart->insertIntoCart($arr);
+$Cart->insertIntoCart($arr);

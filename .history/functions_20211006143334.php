@@ -7,7 +7,7 @@ require ('database/DBController.php');
 require ('database/Product.php');
 
 // require Cart Class
-require ('database/Cart.php');
+// require ('database/Cart.php');
 
 
 // DBController object
@@ -18,10 +18,5 @@ $product = new Product($db);
 $product_shuffle = $product->getData();
 
 // Cart object
-$Cart = new Cart($db );
-// $arr=array(
-//     "user_id"=>3,
-//     "item_id"=>5
-// );
 
-// $Cart->insertIntoCart($arr);
+
