@@ -1,15 +1,16 @@
 <!-- Shopping cart section  -->
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if (isset($_POST['delete-cart-submit'])){
-        $deletedrecord = $Cart->deleteWishlist($_POST['item_id']);
-    }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if (isset($_POST['delete-cart-submit'])){
+            $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+        }
 
-    if(isset($_POST['cart-submit'])){
-        $Cart->saveForLater($_POST['item_id'], 'cart', 'wishlist');
+        // save for later
+        if (isset($_POST['wishlist-submit'])){
+            $Cart->saveForLater($_POST['item_id']);
+        }
     }
-}
-?>   
+?>
 
 <section id="cart" class="py-3 mb-5">
     <div class="container-fluid w-75">

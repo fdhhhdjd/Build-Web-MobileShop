@@ -2,7 +2,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     if (isset($_POST['delete-cart-submit'])){
-        $deletedrecord = $Cart->deleteWishlist($_POST['item_id']);
+        $deletedrecord = $Cart->deleteCart($_POST['item_id']);
     }
 
     if(isset($_POST['cart-submit'])){

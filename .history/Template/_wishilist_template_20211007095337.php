@@ -1,15 +1,16 @@
 <!-- Shopping cart section  -->
 <?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST'){
-    if (isset($_POST['delete-cart-submit'])){
-        $deletedrecord = $Cart->deleteWishlist($_POST['item_id']);
-    }
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if (isset($_POST['delete-cart-submit'])){
+            $deletedrecord = $Cart->deleteCart($_POST['item_id']);
+        }
 
-    if(isset($_POST['cart-submit'])){
-        $Cart->saveForLater($_POST['item_id'], 'cart', 'wishlist');
+        // save for later
+        if (isset($_POST['wishlist-submit'])){
+            $Cart->saveForLater($_POST['item_id']);
+        }
     }
-}
-?>   
+?>
 
 <section id="cart" class="py-3 mb-5">
     <div class="container-fluid w-75">
@@ -47,15 +48,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 <!-- product qty -->
                                 <div class="qty d-flex pt-2">
 
-                                    <form method="post">
-                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
-                                        <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger pl-0 pr-3 border-right">Delete</button>
-                                    </form>
+                                <form method="post">
+                                <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
+                            </form>
 
-                                    <form method="post">
-                                        <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
-                                        <button type="submit" name="cart-submit" class="btn font-baloo text-danger">Add to Cart</button>
-                                    </form>
+                            <form method="post">
+                                <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
+                                <button type="submit" name="wishlist-submit" class="btn font-baloo text-danger">Save for Later</button>
+                            </form>
 
 
                                 </div>
