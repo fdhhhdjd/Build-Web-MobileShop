@@ -7,8 +7,6 @@ class Cart
 
     public function __construct(DBController $db)
     {
-
-        
         if (!isset($db->con)) return null;
         $this->db = $db;
     }
@@ -95,7 +93,7 @@ class Cart
         $result = $this->db->con->multi_query($query);
 
         if($result){
-            header("Location:" . $_SERVER['PHP_SELF']);
+            header("Location :" . $_SERVER['PHP_SELF']);
         }
         return $result;
     }

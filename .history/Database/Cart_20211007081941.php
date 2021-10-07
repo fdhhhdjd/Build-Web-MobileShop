@@ -7,8 +7,6 @@ class Cart
 
     public function __construct(DBController $db)
     {
-
-        
         if (!isset($db->con)) return null;
         $this->db = $db;
     }
