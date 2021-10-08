@@ -1,9 +1,6 @@
-<?php 
-
-session_start();
-
+<?php
 if (!isset($_SESSION['username'])) {
-    header("Location: login/index.php");
+  header("Location: index.php");
 }
 ?>
 <!DOCTYPE html>
@@ -60,8 +57,7 @@ if (!isset($_SESSION['username'])) {
         </p>
         <div class="font-rale font-size-14">
           <a href="login/logout.php" class="px-3 border-right border-left text-dark">Logout</a>
-          <a href="#" class="px-3 border-right text-dark"> <?php echo "" . $_SESSION['username'] . ""; ?></a>
-         
+          <a href="#" class="px-3 border-right text-dark">TaiDevWeb (0)</a>
         </div>
       </div>
 
