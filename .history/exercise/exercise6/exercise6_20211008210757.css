@@ -1,0 +1,17 @@
+.title{
+    color: cornflowerblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+.second-left{
+    color: #ff0a07 ;
+    font-weight: bold;
+    text-align: right;
+}
+.second-right{
+    color: #ff0a07 ;
+}
+.third-four-left{
+    color: blue;
+    text-align: right;
+}
