@@ -33,34 +33,38 @@
 </head>
 <body>
 <?php
-
     ini_set('display_errors',0);
-    $width = $_POST['width'];
-    $height = $_POST['height'];
-    $perimeter = ($width+$height)*2;
-    $acreage = $width*$height;
+    $ban_kinh = $_POST['bankinh'];
+    define("PI",3.14);
+    $chu_vi=2*PI*$ban_kinh;
+    $dien_tich=PI*pow($ban_kinh,2);
+ 
+ 
+    
+ 
+    
 ?>
     <form action="" method="post">
         <table>
             <tr class="center">
                 <td colspan="2">
-                    HÌNH CHỮ NHẬT
+                    Diện tích và chu vi hình tròn
                 </td>
             </tr>
             <tr>
                 <td>
-                    Chều rộng
+                    Bán kính
                 </td>
                 <td>
-                    <input type="text" name="width">
+                    <input type="text" name="bankinh">
                 </td>
             </tr>
             <tr>
                 <td>
-                    Chều dài
+                    Chu vi
                 </td>
                 <td>
-                    <input type="text" name="height">
+                    <input type="text" name="height" value="<?php echo $chu_vi ?>" disabled>
                 </td>
             </tr>
           
@@ -69,7 +73,7 @@
                     Diện tích
                 </td>
                 <td>
-                    <input type="text" name="acreage" value="<?php echo $acreage ?>" disabled>
+                    <input type="text" name="acreage" value="<?php echo $dien_tich ?>" disabled>
                 </td>
             </tr>
             <tr class="center">

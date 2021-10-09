@@ -19,6 +19,7 @@
         h2{
             color: #e14c12;
         }
+
         #kq{
             background: pink;
         }
@@ -48,7 +49,7 @@
         <table align="center">
             <tr bgcolor="#efce69">
                 <td colspan="2">
-                    <h2 style="text-align: center;">Thanh Toán Tiền Điện </h2>
+                    <h2 style="text-align: center;">DIỆN TÍCH HÌNH CHỮ NHẬT</h2>
                 </td>
             </tr>
 

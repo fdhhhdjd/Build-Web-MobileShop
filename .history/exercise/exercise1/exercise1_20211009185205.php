@@ -63,7 +63,14 @@
                     <input type="text" name="height">
                 </td>
             </tr>
-          
+            <tr>
+                <td>
+                    Chu vi
+                </td>
+                <td>
+                    <input type="text" name="perimeter" value="<?php echo $perimeter ?>"disabled>
+                </td>
+            </tr>
             <tr>
                 <td>
                     Diện tích

@@ -33,7 +33,6 @@
 </head>
 <body>
 <?php
-
     ini_set('display_errors',0);
     $width = $_POST['width'];
     $height = $_POST['height'];
@@ -57,19 +56,26 @@
             </tr>
             <tr>
                 <td>
-                    Chều dài
+                    Chều cao
                 </td>
                 <td>
                     <input type="text" name="height">
                 </td>
             </tr>
-          
+            <tr>
+                <td>
+                    Chu vi
+                </td>
+                <td>
+                    <input type="text" name="perimeter" value="<?php echo $perimeter ?>">
+                </td>
+            </tr>
             <tr>
                 <td>
                     Diện tích
                 </td>
                 <td>
-                    <input type="text" name="acreage" value="<?php echo $acreage ?>" disabled>
+                    <input type="text" name="acreage" value="<?php echo $acreage ?>">
                 </td>
             </tr>
             <tr class="center">

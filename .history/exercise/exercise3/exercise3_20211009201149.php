@@ -21,7 +21,7 @@
             width: 300px;
         }
         button{
-            background: #34a853;
+            background: gray;
             border: none;
             padding: 10px 20px;
             font-weight: bold;
@@ -29,47 +29,66 @@
         button:hover{
             cursor: pointer;
         }
+        .money{
+            background:pink;
+        }
     </style>
 </head>
 <body>
 <?php
-
     ini_set('display_errors',0);
-    $width = $_POST['width'];
-    $height = $_POST['height'];
-    $perimeter = ($width+$height)*2;
-    $acreage = $width*$height;
+    $chi_so_cu = $_POST['chi_so_cu'];
+    $chi_so_moi = $_POST['chi_so_moi'];
+    define("don_gia",20000);
+    $so_tien_thanh_toan=($chi_so_moi-$chi_so_cu)*$don_gia
 ?>
     <form action="" method="post">
         <table>
             <tr class="center">
                 <td colspan="2">
-                    HÌNH CHỮ NHẬT
+                   Thanh Toán tiền điện
                 </td>
             </tr>
             <tr>
                 <td>
-                    Chều rộng
+                    Tên chủ hộ
                 </td>
                 <td>
-                    <input type="text" name="width">
+                    <input type="text" name="name">
                 </td>
             </tr>
             <tr>
                 <td>
-                    Chều dài
+                 Chỉ số củ
                 </td>
                 <td>
-                    <input type="text" name="height">
+                    <input type="text" name="chi_so_cu" value="<?php echo $chi_so_cu?>">
                 </td>
+                
             </tr>
           
             <tr>
                 <td>
-                    Diện tích
+                   Chỉ số mới
                 </td>
                 <td>
-                    <input type="text" name="acreage" value="<?php echo $acreage ?>" disabled>
+                    <input type="text" name="chi_so_moi" value="<?php echo $chi_so_moi?>" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Đơn giá
+                </td>
+                <td>
+                    <input type="text" name="don_gia" value="<?php echo $don_gia ?>" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                  Số tiền thanh toán
+                </td>
+                <td>
+                    <input type="text" name="acreage" value="<?php $so_tien_thanh_toan ?>" class="money" disabled >
                 </td>
             </tr>
             <tr class="center">

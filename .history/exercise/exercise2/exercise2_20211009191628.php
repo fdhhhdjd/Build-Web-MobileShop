@@ -44,7 +44,7 @@
         <table>
             <tr class="center">
                 <td colspan="2">
-                    HÌNH CHỮ NHẬT
+                    Diện tích và chu vi hình tròn
                 </td>
             </tr>
             <tr>
