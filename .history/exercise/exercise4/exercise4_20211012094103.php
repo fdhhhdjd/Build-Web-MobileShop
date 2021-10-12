@@ -51,9 +51,6 @@
     if(isset($_POST['reset']))
     {
         $toan = '';
-        $ly="";
-        $hoa ="";
-        $dc ="";
     }
 ?>
     <form action="" method="post" name="ket qua thi dai hoc">

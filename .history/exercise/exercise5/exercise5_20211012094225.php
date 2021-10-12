@@ -57,7 +57,7 @@
             $thongbao = "Giờ kết thúc phải > giờ bắt đầu";
     }
 ?>
-    <form action="" method="post" name="Tinh tien karaoke">
+    <form action="bai5.php" method="post" name="Tinh tien karaoke">
         <table align="center">
             <tr bgcolor="#25aeae">
                 <td colspan="2">

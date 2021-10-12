@@ -48,15 +48,8 @@
                 $kq = "Rớt";
         }
     }
-    if(isset($_POST['reset']))
-    {
-        $toan = '';
-        $ly="";
-        $hoa ="";
-        $dc ="";
-    }
 ?>
-    <form action="" method="post" name="ket qua thi dai hoc">
+    <form action="bai4.php" method="post" name="ket qua thi dai hoc">
         <table align="center">
             <tr bgcolor="#dd54b9">
                 <td colspan="2">
@@ -110,14 +103,12 @@
                 <td>
                     <input type="text" name="kq" id="kq" value="<?php if(isset($kq)) echo $kq ?>" readonly>
                 </td>
-               
             </tr>
 
             <tr>
                 <td></td>
                 <td>
                     <input type="submit" value="Xem kết quả" name="tinh">
-                    <input type="submit" value="Reset" name="reset">
                 </td>
             </tr>
         </table>

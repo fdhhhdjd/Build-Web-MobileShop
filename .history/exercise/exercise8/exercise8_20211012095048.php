@@ -23,6 +23,7 @@
         }
     </style>
 </head>
+
 <body>
     <form action="PageSend.php" method="post">
         <div>

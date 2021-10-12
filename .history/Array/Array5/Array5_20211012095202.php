@@ -40,7 +40,7 @@ if (isset($_POST['submit'])) {
 ?>
 </head>
 <body>
-<form action="" method="post">
+<form action="bai5.php" method="post">
 	<table>
 		<tr>
 			<td colspan="2" align="center">Thay thế</td>

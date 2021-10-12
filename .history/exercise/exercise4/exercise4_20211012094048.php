@@ -51,9 +51,6 @@
     if(isset($_POST['reset']))
     {
         $toan = '';
-        $ly="";
-        $hoa ="";
-        $dc ="";
     }
 ?>
     <form action="" method="post" name="ket qua thi dai hoc">
@@ -117,7 +114,7 @@
                 <td></td>
                 <td>
                     <input type="submit" value="Xem kết quả" name="tinh">
-                    <input type="submit" value="Reset" name="reset">
+                    <input type="submit" value="Xem kết quả" name="reset">
                 </td>
             </tr>
         </table>

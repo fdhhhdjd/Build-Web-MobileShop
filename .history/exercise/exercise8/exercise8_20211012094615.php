@@ -23,8 +23,10 @@
         }
     </style>
 </head>
+
 <body>
-    <form action="PageSend.php" method="post">
+    
+    <form action="" method="post">
         <div>
             <h3>Enter Your Information</h3>
             <table>
