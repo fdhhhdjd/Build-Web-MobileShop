@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 		}
 		
 	} else {
-		echo "<script>alert('Mật khẩu không khớp.')</script>";
+		echo "<script>alert('Password Not Matched.')</script>";
 	}
 }
 

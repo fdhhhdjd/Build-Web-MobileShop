@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  max-width: 550px;
+  display: flex;
+  justify-content: center;
+}
+
+input.form-control {
+  margin: 6px;
+}
+
+h3{
+  text-align: center;
+}
+
+form{
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  border-radius: 12px;
+}
+
+form.col-md-12{
+  padding: 40px;
+}
+
+button.btn.btn-primary {
+  margin: 10px auto;
+}

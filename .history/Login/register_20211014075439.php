@@ -31,15 +31,15 @@ if (isset($_POST['submit'])) {
 				$_POST['password'] = "";
 				$_POST['cpassword'] = "";
 			} else {
-				echo "<script>alert('Rất tiếc! Đã xảy ra sai sót gì đó.')</script>";
+				echo "<script>alert('Woops! Something Wrong Went.')</script>";
 			
 			}
 		} else {
-			echo "<script>alert('Rất tiếc! Email đã tồn tại.')</script>";
+			echo "<script>alert('Woops! Email Already Exists.')</script>";
 		}
 		
 	} else {
-		echo "<script>alert('Mật khẩu không khớp.')</script>";
+		echo "<script>alert('Password Not Matched.')</script>";
 	}
 }
 

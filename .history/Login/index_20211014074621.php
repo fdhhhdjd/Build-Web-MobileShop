@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
 		$_SESSION['username'] = $row['username'];
 		header("Location: ../index.php");
 	} else {
-		echo "<script>alert('Rất tiếc! Email hoặc mật khẩu sai.')</script>";
+		echo "<script>alert('Woops! Email or Password is Wrong.')</script>";
 	}
 }
 
