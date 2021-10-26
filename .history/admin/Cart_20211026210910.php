@@ -38,7 +38,7 @@
           <a class="nav-link" href="product.php">product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">CartProduct</a>
+          <a class="nav-link" href="#">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
